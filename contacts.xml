@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts>
+<contact>
+	<first_name>Marian</first_name>
+	<last_name>Pazdioch</last_name>
+	<phone_number>234232342</phone_number>
+	<notes>menda i oszust</notes>
+</contact>
+<contact>
+	<first_name>Ferdek</first_name>
+	<last_name>Kiepski</last_name>
+	<phone_number>234232342</phone_number>
+	<notes>pijak i len jeden</notes>
+</contact>
+<contact>
+	<first_name>Arnold</first_name>
+	<last_name>Boczek</last_name>
+	<phone_number>234232342</phone_number>
+	<notes>tlusty obżartuch</notes>
+</contact>
+<contact>
+	<first_name>Halinka</first_name>
+	<last_name>Kiepska</last_name>
+	<phone_number>234232342</phone_number>
+	<notes>pani jelopowa</notes>
+</contact>
+</contacts>

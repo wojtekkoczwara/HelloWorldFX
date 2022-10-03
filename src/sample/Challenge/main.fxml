@@ -1,0 +1,56 @@
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane fx:id="mainBorderPane" fx:controller="Challenge.Controller" xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="Contacts">
+                    <items>
+                        <MenuItem text = "Add" onAction="#showNewContactDialog"/>
+                        <MenuItem text="Delete" onAction="#deleteContact"/>
+                        <MenuItem text="Exit" onAction="#handleExit"/>
+                    </items>
+                </Menu>
+            </MenuBar>
+        </VBox>
+    </top>
+    <center>
+        <VBox>
+            <TableView fx:id="tableView">
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                </columnResizePolicy>
+                <columns>
+                    <TableColumn fx:id="firstNameRow" text="First Name">
+                        <cellValueFactory>
+                            <!--                        This maps to name column in Table artists-->
+                            <PropertyValueFactory property="firstName"/>
+                        </cellValueFactory>
+
+                    </TableColumn>
+
+                    <TableColumn fx:id="lastNameRow" text="Last name">
+                        <cellValueFactory>
+                            <!--                        This maps to name column in Table artists-->
+                            <PropertyValueFactory property="lastName"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="phoneNumberRow" text="Phone number">
+                        <cellValueFactory>
+                            <!--                        This maps to name column in Table artists-->
+                            <PropertyValueFactory property="phoneNumber"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="notesRow" text="Notes">
+                        <cellValueFactory>
+                            <!--                        This maps to name column in Table artists-->
+                            <PropertyValueFactory property="notes"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>
